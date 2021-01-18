@@ -96,10 +96,12 @@ INCLUDES+= -I../../../../../../CMSIS/AmbiqMicro/Include
 INCLUDES+= -I../src
 
 VPATH = ../../../../../../devices
+VPATH+=:../../../../../../mcu/apollo4b/hal/mcu
 VPATH+=:../../../../../../utils
 VPATH+=:../src
 
 SRC = am_resources.c
+SRC += am_hal_iom.c
 SRC += ios_fifo_host.c
 SRC += am_util_delay.c
 SRC += am_util_stdio.c

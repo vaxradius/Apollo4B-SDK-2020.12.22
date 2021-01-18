@@ -107,7 +107,7 @@
 #include "am_util.h"
 
 #define     IOM_MODULE          0
-#define     USE_SPI             1   // 0 = I2C, 1 = SPI
+#define     USE_SPI             0   // 0 = I2C, 1 = SPI
 #define     I2C_ADDR            0x10
 // How much data to read from Slave before ending the test
 #define     MAX_SIZE            10000
@@ -189,7 +189,7 @@ static am_hal_iom_config_t g_sIOMSpiConfig =
 static am_hal_iom_config_t g_sIOMI2cConfig =
 {
     .eInterfaceMode = AM_HAL_IOM_I2C_MODE,
-    .ui32ClockFreq  = AM_HAL_IOM_1MHZ,
+    .ui32ClockFreq  = AM_HAL_IOM_400KHZ,
 };
 
 #define MAX_I2C_SIZE   255
