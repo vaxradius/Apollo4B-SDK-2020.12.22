@@ -55,8 +55,8 @@
 //!     HOST (ios_fifo_host)                    SLAVE (ios_fifo)
 //!     --------------------                    ----------------
 //!     GPIO[10] GPIO Interrupt (slave to host) GPIO[4]  GPIO interrupt
-//!     GPIO[5]  IOM0 I2C SCL                   GPIO[0]  IOS I2C SCL
-//!     GPIO[6]  IOM0 I2C SDA                   GPIO[1]  IOS I2C SDA
+//!     GPIO[61]  IOM0 I2C SCL                   GPIO[0]  IOS I2C SCL
+//!     GPIO[62]  IOM0 I2C SDA                   GPIO[1]  IOS I2C SDA
 //!     GND                                     GND
 //! @endverbatim
 //
@@ -106,7 +106,7 @@
 #include "am_bsp.h"
 #include "am_util.h"
 
-#define     IOM_MODULE          0
+#define     IOM_MODULE          6
 #define     USE_SPI             0   // 0 = I2C, 1 = SPI
 #define     I2C_ADDR            0x10
 // How much data to read from Slave before ending the test
